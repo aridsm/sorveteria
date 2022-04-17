@@ -1,0 +1,33 @@
+header {
+    nav {
+        max-width: 50rem;
+        width:100%;
+        margin: 0 auto;
+        padding: 1.5rem 1rem
+    }
+    nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo {
+        font-family: 'Fredoka One', cursive;
+        font-size: 1.125rem;
+    }
+    .toggle-item {
+        position: relative;
+        .produtos-lista {
+            position: absolute;
+            background: $bg-1;
+            text-align: center;
+            display: none;
+            li a {
+                padding: 0.5rem 2rem;
+                &:hover {
+                    background: $color-1;
+                    color: $bg-1
+                }
+            }
+        }
+    }
+}

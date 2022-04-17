@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    border:none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    display: block;
+    background: transparent;
+}
+
+a {
+    display: block;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit
+
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+}
