@@ -7,5 +7,19 @@ body {
 .btn-geral {
     padding: 0.5rem 1rem;
     background: $color-2;
-    color: $color-3
+    color: $color-3;
+    @include fitContent;
+    border-radius: $borderRadius;
+    @include transition;
+    @include shadow(2px 2px 5px $color-4);
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.container {
+    max-width: 57rem;
+    width:100%;
+    padding: 0 1rem;
+    margin: 0 auto;
 }

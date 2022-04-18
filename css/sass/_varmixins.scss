@@ -1,5 +1,40 @@
 $bg-1: #461882;
 $bg-2: #3F1477;
+$bg-3: #52218f;
 $color-1: #EDF2D0;
 $color-2: #FBD651;
-$color-3: #7C5D0D
+$color-3: #7C5D0D;
+$color-4: #390E70;
+$borderRadius: 0.3rem;
+
+@mixin transition {
+    transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+}
+
+@mixin shadow($shadow) {
+    box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+}
+
+@mixin gradient($g) {
+    background: linear-gradient($g);
+    background: -webkit-linear-gradient($g);
+    background: -o-linear-gradient($g);
+    background: -moz-linear-gradient($g);
+}
+
+@mixin fitContent {
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+
+@mixin columnCount($c) {
+    column-count: $c;
+    -webkit-column-count: $c;
+    -moz-column-count: $c;
+}

@@ -1,0 +1,51 @@
+.novidade {
+    @include gradient((90deg, $bg-1 50%, $bg-3 100%));
+    border-radius: $borderRadius;
+    padding: 4rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+    position: relative;
+    @include shadow(2px 2px 4px $color-4);
+    h2 {
+        font-size:3.625rem;
+        text-transform: uppercase;
+        span {
+            color: $color-2
+        }
+    }
+    .col-2-novidade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right:0;
+        left:0;
+        margin: 0 auto;
+        width: 25rem;
+        top: -6rem;
+        img {
+            max-width: 100%;
+        }
+    }
+    .col-1-novidade {
+        grid-column: 1;
+        p {
+            margin-top: 0.5rem;
+        }
+    }
+    .col-3-novidade {
+        grid-column: 3;
+        padding: 0 3rem;
+        h3 {
+            font-size: 1.25rem;
+        }
+        ul {
+            margin: 1rem 0;
+            li + li {
+                margin-top: 0.3rem;
+            }
+        }
+    }
+}

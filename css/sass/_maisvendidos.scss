@@ -1,0 +1,36 @@
+.mais-vendidos {
+    padding: 5rem 0 10rem 0;
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        text-align: center;
+        margin:4rem 0
+    }
+    ul li {
+        flex: 1;
+        div {
+            overflow: hidden;
+            border-radius: $borderRadius;
+            margin-bottom: 1rem;
+        }
+        + li {
+            margin-left: 2rem;
+        }
+    }
+    .btn-geral {
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        @include transition;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

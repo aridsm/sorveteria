@@ -1,0 +1,16 @@
+.sobre {
+    padding: 4rem 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    p {
+        @include columnCount(2);
+        column-gap: 4rem;
+        text-align: justify;
+        margin-bottom: 4rem;
+    }
+    .btn-geral {
+        margin: 0 auto;
+    }
+}

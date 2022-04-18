@@ -1,0 +1,24 @@
+.produtos ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    li a {
+        display: flex;
+        align-items: center;
+        @include gradient((90deg, $bg-1 0%, $bg-3 100%));
+        padding: 1.5rem 1rem;
+        justify-content: center;
+        border-radius: $borderRadius;
+        @include transition;
+        @include shadow(1px 1px 3px $color-4);
+        img {
+            width: 3rem
+        }
+        p {
+            margin-left: 1rem;
+        }
+        &:hover {
+            transform: translateY(-0.2rem);
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.principal {
+    @include gradient((90deg, $bg-2 50%, $bg-1 100%));
+    .container {
+        max-width: 65rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &:after {
+            content: '';
+            display: none;
+            position: absolute;
+            top:0;
+            right: 5rem;
+            width: 1rem;
+            height: 100%;
+            background: $color-2;
+        }
+    }
+    .col-1-principal {
+        padding: 7rem 0;
+        p {
+            margin-top: 1rem;
+        }
+        h1 {
+            font-size: 4rem;
+        span {
+            color: $color-2;
+            position: relative;
+            &:before {
+                content:'*';
+                display: block;
+                position: absolute;
+                color: $color-2;
+                top: 1rem;
+                left: -3rem;
+                font-weight: 400;
+            }
+            }
+        }
+    }
+    .col-2-principal {
+        display: flex;
+        align-items: center;
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            button {
+                width: 0.8rem;
+                height: 0.8rem;
+                border-radius: 50%;
+                background: $color-2;
+                & + button {
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+        .img {
+            max-width: 24rem;
+            height: 23rem;
+            border-top-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            overflow: hidden;
+            margin-left: 1rem;
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+                z-index: 1;
+            }
+        }
+        &:before {
+            content:'*';
+            display: block;
+            position: absolute;
+            color: $color-1;
+            top: 2rem;
+            right: 0rem;
+            font-size: 7rem;
+            font-family: 'Fredoka one', cursive;
+        }
+    }
+}

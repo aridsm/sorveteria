@@ -1,0 +1,42 @@
+footer {
+    background: $bg-1;
+    padding-top: 4rem;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+    }
+    .titulos-footer {
+        font-size: 1.5rem;
+        font-family: 'Fredoka one', cursive;
+        margin-bottom: 0.5rem;
+    }
+    a, span, .contato li {
+        padding: 0.2rem 0
+    }
+    .contato li {
+        display: flex;
+        align-items: center;
+        > img {
+            margin-right: 0.5rem;
+        }
+        a img {
+            margin-right: 1rem;
+            margin-top: 0.5rem;
+        }
+    }
+    .menu nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .endereco span {
+        display: block;
+    }
+    .by {
+        background: $color-2;
+        padding: 1rem 0;
+        text-align: center;
+        color: $color-3
+    }
+}
