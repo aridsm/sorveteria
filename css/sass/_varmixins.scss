@@ -38,3 +38,11 @@ $borderRadius: 0.3rem;
     -webkit-column-count: $c;
     -moz-column-count: $c;
 }
+
+@mixin asterisco {
+    content:'*';
+    display: inline-block;
+    color: $color-2;
+    position: absolute;
+    font-family: 'Fredoka one', cursive;
+}

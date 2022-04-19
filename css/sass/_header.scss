@@ -1,34 +1,51 @@
 header {
     background: $bg-1;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
     nav {
         max-width: 55rem;
         width:100%;
         margin: 0 auto;
-        padding: 1.5rem 1rem
     }
     nav > ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
     }
     .logo {
         font-family: 'Fredoka One', cursive;
         font-size: 1.125rem;
+        position: absolute;
+        width:3rem;
+        top: 0.9rem;
+        left: calc(50% - 1.5rem)
     }
     .toggle-item {
         position: relative;
+        justify-self: center;
+        button img {
+            transform: rotate(180deg);
+        }
         .produtos-lista {
             position: absolute;
-            background: $bg-1;
+            background: $bg-3;
             text-align: center;
             display: none;
+            z-index: 2;
             li a {
                 padding: 0.5rem 2rem;
+                @include transition;
                 &:hover {
                     background: $color-1;
                     color: $bg-1
                 }
             }
         }
+    }
+    li:nth-of-type(4) {
+        grid-column: 5;
     }
 }

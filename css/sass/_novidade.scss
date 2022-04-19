@@ -23,7 +23,7 @@
         right:0;
         left:0;
         margin: 0 auto;
-        width: 25rem;
+        width: 24.5rem;
         top: -6rem;
         img {
             max-width: 100%;
@@ -37,7 +37,7 @@
     }
     .col-3-novidade {
         grid-column: 3;
-        padding: 0 3rem;
+        padding-left: 3rem;
         h3 {
             font-size: 1.25rem;
         }
@@ -46,6 +46,14 @@
             li + li {
                 margin-top: 0.3rem;
             }
+
         }
+    }
+    &:before {
+        @include asterisco;
+        right:-1.3rem;
+        top: calc(50% - 2.5rem);
+        font-size: 5rem;
+        color: $color-1
     }
 }

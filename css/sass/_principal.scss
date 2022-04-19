@@ -19,6 +19,7 @@
     }
     .col-1-principal {
         padding: 7rem 0;
+        width:100%;
         p {
             margin-top: 1rem;
         }
@@ -42,6 +43,8 @@
     .col-2-principal {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        width:100%;
         .buttons {
             display: flex;
             flex-direction: column;
@@ -56,8 +59,8 @@
             }
         }
         .img {
-            max-width: 24rem;
-            height: 23rem;
+            width: 24rem;
+            height: 24rem;
             border-top-left-radius: 3rem;
             border-bottom-right-radius: 3rem;
             overflow: hidden;

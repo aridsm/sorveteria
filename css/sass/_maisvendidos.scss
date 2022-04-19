@@ -1,12 +1,16 @@
 .mais-vendidos {
-    padding: 5rem 0 10rem 0;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
     h2 {
         font-size: 1.5rem;
         text-align: center;
     }
     ul {
-        display: flex;
-        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+        grid-gap: 1rem;
+        row-gap: 3rem;
+        width:100%;
         margin:4rem 0
     }
     ul li {
@@ -15,9 +19,6 @@
             overflow: hidden;
             border-radius: $borderRadius;
             margin-bottom: 1rem;
-        }
-        + li {
-            margin-left: 2rem;
         }
     }
     .btn-geral {

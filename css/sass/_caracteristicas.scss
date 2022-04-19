@@ -4,30 +4,64 @@
     grid-template-rows: 1fr 1fr 1fr;
     position: relative;
     padding: 7rem 0;
-    img {
-        width: 19rem;
+    .img {
         grid-column: 2;
         grid-row: 1 / 4;
         margin: 0 2rem;
+        position: relative;
+        &:after {
+            content:'';
+            display:block;
+            position: absolute;
+            bottom: 3rem;
+            right:5rem;
+            background: #06001b;
+            filter: blur(70px);
+            z-index: -1;
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+    img {
+        width: 19rem;
     }
     span {
         max-width: 11rem;
+        position: relative;
     }
     .caracteristica-1 {
         grid-column: 1;
         grid-row: 1;
         text-align: right;
         margin-left: auto;
+        &:before {
+            @include asterisco;
+            left: -0.5rem;
+            top: -0.2rem;
+            font-size: 3rem;
+        }
     }
     .caracteristica-2 {
         grid-column: 1;
         grid-row: 3;
         text-align: right;
         margin-left: auto;
+        &:before {
+            @include asterisco;
+            left: -0.5rem;
+            top: -0.2rem;
+            font-size: 3rem;
+        }
 
     }
     .caracteristica-3 {
         grid-column: 3;
         grid-row: 2;
+        &:before {
+            @include asterisco;
+            right: -1rem;
+            top: -0.2rem;
+            font-size: 3rem;
+        }
     }
 }
