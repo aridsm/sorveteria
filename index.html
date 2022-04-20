@@ -13,12 +13,12 @@
 <body>
     <header>
         <a href="" class="logo">LOGO</a>
-        <nav>
+        <nav class="animeLeft">
             <ul>
-                <li><a href="">Home</a></li>
+                <li class="ativo"><a href="">Home</a></li>
                 <li class="toggle-item">
                     <button>Produtos <img src="./img/seta.svg" alt=""></button>
-                    <ul class="produtos-lista">
+                    <ul class="produtos-lista animeLeft">
                         <li><a href="">Sorvetes</a></li>
                         <li><a href="">Açaí</a></li>
                         <li><a href="">Picolés</a></li>
@@ -31,7 +31,7 @@
                 <li><a href="">Contato</a></li>
             </ul>
         </nav>
-        <button class="btn-mobile">
+        <button class="btn-mobile close-btn">
             <div></div>
         </button>
     </header>
@@ -43,13 +43,17 @@
                     <p>All the Lorem Ipsum generators on the <br> Internet tend to repeat </p>
                 </div>
                 <div class="col-2-principal">
-                    <nav class="buttons">
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                    </nav>
+                    <div class="circles">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                     <div class="img">
-                        <img src="./img/bann1.jpg" alt="">
+                        <img src="./img/bann1.jpg" alt="" class="ativo animeLeft">
+                        <img src="./img/bann2.jpg" alt="" class="animeLeft">
+                        <img src="./img/bann3.jpg" alt="" class="animeLeft">
+                        <img src="./img/bann4.jpg" alt="" class="animeLeft">
+                        <img src="./img/bann5.jpg" alt="" class="animeLeft">
                     </div>
                 </div>
             </div>
@@ -87,32 +91,32 @@
             <ul>
                 <li>
                     <a href="">
-                        <div><img src="./img/comprados1.jpg" alt=""></div>
-                        <p>Sorvete 1</p>
+                        <div><img src="./img/comprados1.jpg" alt="Suspendisse"></div>
+                        <p>Suspendisse</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <div><img src="./img/comprados2.jpg" alt=""></div>
-                        <p>Sorvete 2</p>
+                        <div><img src="./img/comprados2.jpg" alt="Curabitur"></div>
+                        <p>Curabitur</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <div><img src="./img/comprados3.jpg" alt=""></div>
-                        <p>Sorvete 3</p>
+                        <div><img src="./img/comprados3.jpg" alt="Vivamus"></div>
+                        <p>Vivamus</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <div><img src="./img/comprados4.jpg" alt=""></div>
-                        <p>Sorvete 4</p>
+                        <div><img src="./img/comprados4.jpg" alt="Quisque"></div>
+                        <p>Quisque</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <div><img src="./img/comprados5.jpg" alt=""></div>
-                        <p>Sorvete 5</p>
+                        <div><img src="./img/comprados5.jpg" alt="Phasellus"></div>
+                        <p>Phasellus</p>
                     </a>
                 </li>
             </ul>
@@ -159,22 +163,21 @@
             </div>
         </section>
         <section class="sobre">
+            <h2>Sobre</h2>
             <div class="container">
-                <h2>Sobre</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Expedita harum nemo veritatis nesciunt quia placeat quod,
-                    nisi quos rem excepturi! Repellat sapiente. Vero
-                    exercitationem velit ipsam corrupti voluptates ipsum, iste sint
-                    recusandae natus autem quis eveniet alias corporis, expedita
-                    optio vitae culpa maxime, odit voluptatem! Fugiat quibusdam veniam
-                    recusandae quia, officiis nisi ducimus molestiae voluptatem
-                    reprehenderit porro quos voluptatum est illum aut fugit cum culpa
-                    temporibus eum aliquid sequi sit repudiandae. Voluptates dolore
-                    quas exercitationem qui consequatur aliquid quidem eveniet
-                    obcaecati repellat. Error quia ut ipsam id.
-                </p>
-                <a href="" class="btn-geral">Conheça o local</a>
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Expedita harum nemo veritatis nesciunt quia placeat quod,
+                        nisi quos rem excepturi! Repellat sapiente. Vero
+                        exercitationem velit ipsam corrupti voluptates ipsum, iste sint
+                        recusandae natus autem quis eveniet alias corporis, expedita
+                        optio vitae culpa maxime, odit voluptatem! Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Deserunt, officia.
+                    </p>
+                    <a href="" class="btn-geral">Conheça o local</a>
+                </div>
+                <div class="img"><img src="./img/123.jpg" alt="Entrada da sorveteria"></div>
             </div>
         </section>
     </main>
@@ -218,5 +221,6 @@
             <a href="https://github.com/aridsm">Projeto feito por Ariane Morelato</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -33,12 +33,6 @@ $borderRadius: 0.3rem;
     width: -moz-fit-content;
 }
 
-@mixin columnCount($c) {
-    column-count: $c;
-    -webkit-column-count: $c;
-    -moz-column-count: $c;
-}
-
 @mixin asterisco {
     content:'*';
     display: inline-block;

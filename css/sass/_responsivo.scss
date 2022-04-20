@@ -1,27 +1,35 @@
-
 @media all and (max-width: 860px) {
     .principal .container {
         h1 {
             font-size: 3rem;
         }
+
         .col-2-principal {
             justify-content: center;
-            width:100%;
-         .img {
-            width: 15rem;
-            height: 15rem;
-        }   
+            width: 100%;
+
+            .img {
+                width: 15rem;
+                height: 15rem;
+            }
         }
     }
+
     .novidade {
         .col-1-novidade h2 {
             font-size: 2.7rem;
         }
+
         .col-2-novidade {
             width: 20rem;
             top: -4rem;
         }
+
+        &:before {
+            display: none;
+        }
     }
+
     .caracteristicas img {
         width: 13rem
     }
@@ -29,41 +37,41 @@
 
 @media screen and (max-width: 700px) {
     header nav {
+        background: $bg-3;
+        position: absolute;
+        top: 4rem;
+        left:0;
+        z-index: 99;
+        padding: 1rem 0;
         display: none;
-    }
-    .btn-mobile div {
-        width: 1.5rem;
-        height:3px;
-        background: $color-1;
-        display: inline-block;
-        position: relative;
-        border-radius: $borderRadius;
-        z-index: 3;
-        &:after {
-            content:'';
-            width:100%;
-            height: 3px;
-            background: $color-1;
-            display: block;
-            position: absolute;
-            top: -8px;
-            border-radius: $borderRadius;
+        ul {
+            grid-template-columns: 1fr;
+            li:nth-of-type(4) {
+                grid-column: 1;
+            }
+            a, button {
+                padding: 1rem
+            }
         }
-        &:before {
-            content:'';
-            width:100%;
-            height: 3px;
-            background: $color-1;
+        &.ativo {
             display: block;
-            position: absolute;
-            bottom: -8px;
-            border-radius: $borderRadius;
         }
     }
+
+    .btn-mobile {
+        margin-left: 1rem;
+        display: block;
+    }
+
+    header .logo {
+        top: 1.5rem
+    }
+
     .novidade {
         grid-template-columns: auto;
         justify-content: center;
         text-align: center;
+
         .col-2-novidade {
             position: relative;
             grid-column: 1;
@@ -71,45 +79,70 @@
             margin-top: -4rem;
             margin-bottom: -4rem;
         }
+
         .col-3-novidade {
             grid-column: 1;
             padding-left: 0;
             margin-top: 2rem;
         }
+
         .btn-geral {
             margin: 0 auto;
         }
     }
+
     .caracteristicas {
         grid-template-columns: auto;
         grid-template-rows: auto 3rem 3rem 3rem;
-        grid-gap:1rem;
+        grid-gap: 1rem;
         justify-content: center;
+
         span {
             max-width: initial;
-            width:100%;
+            width: 100%;
         }
+
         .img {
             grid-column: 1;
             grid-row: 1;
         }
+
         .caracteristica-3 {
             grid-column: 1;
             grid-row: 4;
             text-align: center;
         }
+
         .caracteristica-1 {
             grid-row: 2;
             text-align: center;
         }
-        .caracteristica-2{
+
+        .caracteristica-2 {
             grid-row: 3;
             text-align: center;
         }
+
+        .caracteristica-1,
+        .caracteristica-2,
+        .caracteristica-3 {
+            &:before {
+                left: initial;
+                right: initial;
+                top: 1.2rem;
+                position: relative;
+                margin-right: 1rem;
+            }
+        }
     }
-    .sobre {
+
+    .sobre .container {
+        grid-template-columns: auto;
         p {
-            column-gap: 2rem;
+            max-width: initial;
+        }
+        .btn-geral {
+            margin: 0 auto;
         }
     }
 }
@@ -120,37 +153,52 @@
         flex-direction: column;
         text-align: center;
         padding-bottom: 3rem;
+
         .col-1-principal {
             padding: 3rem 0
         }
+
         .col-2-principal {
             flex-direction: column;
+
             .img {
-            margin-left: 0;
+                margin-left: 0;
             }
-            .buttons {
+
+            .circles {
                 flex-direction: row;
                 margin-bottom: 1rem;
-                button + button {
+
+                div+div {
                     margin-top: 0;
                     margin-left: 0.5rem;
                 }
             }
         }
     }
-    .sobre p {
-        @include columnCount(1);
-        text-align: left;
-    }
+
     footer .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
+
         .endereco {
             margin: 3rem 0;
         }
+
         .contato li {
-                justify-content: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    .galeria ul {
+        li.col-span-2 {
+            grid-column: span 1;
+        }
+        li.row-span-2 {
+            grid-row: span 1;
         }
     }
 }

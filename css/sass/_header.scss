@@ -1,31 +1,47 @@
 header {
     background: $bg-1;
-    height: 3rem;
+    height: 4rem;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    position: relative;
+    z-index: 9999;
     nav {
         max-width: 55rem;
         width:100%;
         margin: 0 auto;
+        padding: 0 1rem;
     }
     nav > ul {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
+    li.ativo {
+        position: relative;
+        &:before {
+            @include asterisco;
+            bottom:-1.7rem;
+            left: calc(50% - 0.4rem);
+            font-size: 1.7rem;
+        }
     }
+    }
+
     .logo {
         font-family: 'Fredoka One', cursive;
         font-size: 1.125rem;
         position: absolute;
         width:3rem;
-        top: 0.9rem;
+        top: 1.2rem;
         left: calc(50% - 1.5rem)
     }
     .toggle-item {
         position: relative;
-        justify-self: center;
+        width: 100%;
+        text-align: center;
+        button {
+        width: 100%;
+        }
         button img {
             transform: rotate(180deg);
         }
@@ -34,7 +50,6 @@ header {
             background: $bg-3;
             text-align: center;
             display: none;
-            z-index: 2;
             li a {
                 padding: 0.5rem 2rem;
                 @include transition;
@@ -42,6 +57,9 @@ header {
                     background: $color-1;
                     color: $bg-1
                 }
+            }
+            &.ativo {
+                display: block;
             }
         }
     }

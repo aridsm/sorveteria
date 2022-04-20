@@ -23,13 +23,12 @@
     li.row-span-2 {
         grid-row: span 2;
     }
-    img {
+    ul img {
         width:100%;
         height:100%;
         object-fit: cover;
         display: block;
         @include transition;
-        cursor: pointer;
         &:hover {
             transform: scale(1.1);
         }
