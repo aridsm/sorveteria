@@ -85,3 +85,27 @@ body {
 
     }
 }
+
+:root{
+    scrollbar-color: $color-2 transparent;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $color-2;
+    border-radius: 5px;
+    border: 2px solid $color-4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ddbb40;
+
+}
