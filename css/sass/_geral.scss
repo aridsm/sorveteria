@@ -86,6 +86,23 @@ body {
     }
 }
 
+.funcionamento{
+    background: $color-2;
+    height: 1.5rem;
+    color: $color-3;
+    font-size: 0.875rem;
+    .container-funcionamento {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        max-width: 55rem;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+}
+
 :root{
     scrollbar-color: $color-2 transparent;
     scrollbar-width: thin;
