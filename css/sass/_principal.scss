@@ -26,6 +26,16 @@
             }
             }
         }
+        .funcionamento {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: rgb(167, 134, 204);
+            position: absolute;
+            top: 2rem;
+            span {
+                display: block;
+            }
+        }
     }
     .col-2-principal {
         display: flex;

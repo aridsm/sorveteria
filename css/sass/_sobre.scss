@@ -9,11 +9,6 @@
         max-width: 25rem;
         margin-bottom: 4rem;
     }
-    p::first-letter {
-        font-size: 2.125rem;
-        font-family: 'Fredoka one', cursive;
-        padding-right: 0.2rem
-    }
     h2 {
         text-align: center;
         margin-bottom: 4rem;
@@ -22,6 +17,15 @@
         max-width: 22rem;
         height: 22rem;
         justify-self: center;
+        position: relative;
+        &:before {
+            @include asterisco;
+            top: 1rem;
+            right: -3rem;
+            font-weight: 400;
+            font-size: 10rem;
+            color: $color-1
+        }
         img {
             object-fit: cover;
             width: 100%;
