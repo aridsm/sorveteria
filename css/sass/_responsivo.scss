@@ -159,13 +159,14 @@
 
 
 @media all and (max-width: 650px) {
+
     .principal .container {
         flex-direction: column;
         text-align: center;
         padding-bottom: 3rem;
 
         .col-1-principal {
-            padding: 3rem 0
+            padding: 5rem 0
         }
 
         .col-2-principal {
@@ -185,6 +186,11 @@
                 }
             }
         }
+        .funcionamento {
+            right:0;
+            left:0;
+            margin: 0 auto;
+        }
     }
 
     footer .container {
@@ -200,6 +206,12 @@
             justify-content: center;
         }
     }
+
+    .sobre .img:before {
+          top: -1.5rem;
+          right: -0.5rem;
+          font-size: 5rem;
+      }
 }
 
 @media all and (max-width: 540px) {
